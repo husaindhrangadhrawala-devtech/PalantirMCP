@@ -421,39 +421,5 @@ def apply_batch_actions(params: ApplyBatchActionsParams):
     
 if __name__ == "__main__":
     mcp.run(transport="stdio")
-    # data = list_object_types(ListObjectTypesParams(limit=10,pagesize=5))
-    # data = list_objects(ListObjectsParams(limit=8,pagesize=5,object_type_id="TmhservicePartsDescription",properties=["materialDescription","materialNumber"],sort={"materialNumber":"asc"}))
-    # print(data)
-    # data = search_objects(SearchObjectsParams(
-    #     limit=5,
-    #     pagesize=5,
-    #     object_type_id="TmhservicePartsDescription",
-    #     properties=["materialDescription","materialNumber"],
-    #     sort={"materialNumber":"asc"},
-        # query=[
-        #     {"and":[
-        #         {"eq":["materialNumber","00590-00191-71"]},
-        #         {"or":[
-        #             {"eq":["materialDescription","SCREW,FL HD CAP"]},
-        #             {"eq":["materialDescription","ZZZ"]}
-        #             ]
-        #         }
-        #     ]}
-        # ]
-        # query=[
-        #     {"and":[
-        #         {"eq":["materialNumber","00590-48872-71"]},
-        #         {"not":[{
-        #             "eq":["materialDescription","TEST"]
-        #         }]}
-        #     ]}
-        # ]
-        # query=[{"eq":["materialNumber","00590-00191-71"]}]
-    # ))
-    # data = aggregate_objects(AggregateObjectsParams(
-    #     object_type_id="TmhservicePartsDescription",
-    #     aggregation = [{"count":["counta"]}],
-    #     # query=[{"eq":["materialDescription","SCREW"]}],
-    #     groupby = [{"exact":["materialDescription"]}]
-    # ))
-    # print(data)
+   
+

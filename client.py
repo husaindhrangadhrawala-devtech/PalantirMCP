@@ -71,9 +71,9 @@ class MCPClient:
 
 
 async def main():
-    print("hii")
+    path = f""  # Path to MCP Server script
     async with MCPClient() as client:
-        await client.connect("C:/Users/husain.d/Documents/Personal POC/MCP/my-mcp-server/servers/services.py")
+        await client.connect(path)
         resources = await client.list_resources()
         tools = await client.list_tools()
         print("Resources:", resources)  
@@ -87,3 +87,4 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
